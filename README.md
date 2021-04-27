@@ -1,0 +1,2 @@
+# Azure_Deeplearnign_compute
+Connecting_azure_compute_to_run_deeplearnignMOdel
