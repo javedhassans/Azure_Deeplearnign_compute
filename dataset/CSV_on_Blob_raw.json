@@ -1,0 +1,93 @@
+{
+	"name": "CSV_on_Blob_raw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Azure_Blob_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "bank.csv",
+				"container": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "age",
+				"type": "String"
+			},
+			{
+				"name": "job",
+				"type": "String"
+			},
+			{
+				"name": "marital",
+				"type": "String"
+			},
+			{
+				"name": "education",
+				"type": "String"
+			},
+			{
+				"name": "default",
+				"type": "String"
+			},
+			{
+				"name": "balance",
+				"type": "String"
+			},
+			{
+				"name": "housing",
+				"type": "String"
+			},
+			{
+				"name": "loan",
+				"type": "String"
+			},
+			{
+				"name": "contact",
+				"type": "String"
+			},
+			{
+				"name": "day",
+				"type": "String"
+			},
+			{
+				"name": "month",
+				"type": "String"
+			},
+			{
+				"name": "duration",
+				"type": "String"
+			},
+			{
+				"name": "campaign",
+				"type": "String"
+			},
+			{
+				"name": "pdays",
+				"type": "String"
+			},
+			{
+				"name": "previous",
+				"type": "String"
+			},
+			{
+				"name": "poutcome",
+				"type": "String"
+			},
+			{
+				"name": "deposit",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,56 @@
+{
+	"name": "bank_on_SQLDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "age",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "job",
+				"type": "varchar"
+			},
+			{
+				"name": "marital",
+				"type": "varchar"
+			},
+			{
+				"name": "education",
+				"type": "varchar"
+			},
+			{
+				"name": "Indefault",
+				"type": "varchar"
+			},
+			{
+				"name": "balance",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "housing",
+				"type": "varchar"
+			},
+			{
+				"name": "loan",
+				"type": "varchar"
+			},
+			{
+				"name": "deposit",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "bank"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

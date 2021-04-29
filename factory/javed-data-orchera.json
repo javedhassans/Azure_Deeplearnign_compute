@@ -1,0 +1,9 @@
+{
+	"name": "javed-data-orchera",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "544f0495-9794-43c9-a363-992a902cecac",
+		"tenantId": "2da4184b-0df1-480d-a009-010c1b06dea3"
+	}
+}
